@@ -29,7 +29,7 @@ class QuizApp:
         # Function to change color alternately
         def change_color():
             current_color = header_label.cget("fg")
-            next_color = "red" if current_color == "black" else "black"
+            next_color = "blue" if current_color == "black" else "black"
             header_label.config(fg=next_color)
             root.after(500, change_color)  # Schedule the function after 500 milliseconds
 
